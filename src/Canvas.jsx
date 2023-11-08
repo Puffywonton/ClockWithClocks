@@ -18,15 +18,15 @@ const Canvas = () => {
                 console.log('phase 2')
                 setTime(timeArrayGenerator(true))
             }, "1500");
-        }, "3500");
+        }, "5000");
     }   
 
     const fullCanvasArray = mergeArrays(time.leftmargin, time.firstDigit, time.secondDigit, time.colon, time.thirdDigit, time.fourthDigit, time.rightmargin)
     const fullCanvas = fullCanvasArray.map((data, index) => 
-        <TinyClock key={index} id={index} hour={data.hour} minute={data.minute} delay='200' onClick={clickHandler}/>
+        <TinyClock key={index} id={index} hour={data.hour} minute={data.minute} delay='200' />
     )    
     return (
-        <div className={classes.container}>{fullCanvas}</div>
+        <div className={classes.container} onClick={clickHandler}>{fullCanvas}</div>
     )
 }
 

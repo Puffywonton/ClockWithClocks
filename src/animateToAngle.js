@@ -6,9 +6,10 @@ const animateToAngle = (target, value) => {
         anime({
             targets: `${target}`,
             rotateZ: [
-                {value: `${angle}`, easing: 'easeInOutBounce'	, duration: 600},
+                {value: `${angle}`, easing: 'cubicBezier(0.450, 0.020, 0.325, 0.890)', duration: 2000},
             ],
         })
     )
 }
 export default animateToAngle
+
