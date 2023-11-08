@@ -11,7 +11,7 @@ const animate = (target, value) => {
                 {value: `${angle2}`, easing: 'linear', duration: 50}
             ],
             delay: anime.stagger(300, {
-                grid: [4, 6], from: 'center'
+                grid: [20, 8], from: 'center'
             })
         })
 )

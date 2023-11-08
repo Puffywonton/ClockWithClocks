@@ -1,101 +1,123 @@
 const digitalNumberGenerator = (string) => {
-    const digitZero = [
+  const digitZero = [
+    { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 2, minute: 3 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 0 }, { hour: 2, minute: 0 }, { hour: 2, minute: 0 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 0 }, { hour: 2, minute: 0 }, { hour: 2, minute: 0 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 0 }, { hour: 0, minute: 1 }, { hour: 0, minute: 3 }, { hour: 2, minute: 0 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }
+      { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]
     
-      const digitOne = [
+  const digitOne = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 1, minute: 2 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 2.5, minute: 2.5 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 }, { hour: 2.5, minute: 2.5 },
         { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 2 }, { hour: 0, minute: 2 }, { hour: 2.5, minute: 2.5 },
         { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 2 }, { hour: 0, minute: 2 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 0, minute: 3 }, { hour: 0, minute: 1 }, { hour: 3, minute: 2 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }  
+    { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]
     
-      const digitTwo = [
+  const digitTwo = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 1, minute: 2 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }, { hour: 0, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
         { hour: 0, minute: 2 }, { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }  
+        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitThree = [
+  const digitThree = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }, { hour: 0, minute: 2 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }, { hour: 0, minute: 2 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }  
+    { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitFour = [
+  const digitFour = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 2 }, { hour: 2, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 0, minute: 2 }, { hour: 0, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 0, minute: 1 }, { hour: 3, minute: 0 }, { hour: 2, minute: 0 },
         { hour: 1, minute: 0 }, { hour: 3, minute: 1 }, { hour: 2, minute: 3 }, { hour: 2, minute: 0 },
         { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 2 }, { hour: 2, minute: 0 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 1 }, { hour: 3, minute: 0 },
+    { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitFive = [
+  const digitFive = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 0, minute: 3 },
         { hour: 0, minute: 2 }, { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 2, minute: 3 },
         { hour: 1, minute: 0 }, { hour: 3, minute: 1 }, { hour: 2, minute: 3 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 0, minute: 3 }, { hour: 2, minute: 0 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+    { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitSix = [
+  const digitSix = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 0, minute: 3 },
         { hour: 0, minute: 2 }, { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 2, minute: 3 },
         { hour: 2, minute: 0 }, { hour: 2, minute: 1 }, { hour: 2, minute: 3 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 0 }, { hour: 0, minute: 1 }, { hour: 0, minute: 3 }, { hour: 2, minute: 0 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+    { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitSeven = [
+  const digitSeven = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 0, minute: 2.5 }, { hour: 0, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2, minute: 0.5 }, { hour: 2, minute: 0.5 }, { hour: 2.5, minute: 2.5 },
+        { hour: 2.5, minute: 2.5 }, { hour: 0.5, minute: 2 }, { hour: 0.5, minute: 2 }, { hour: 2.5, minute: 2.5 },
         { hour: 2.5, minute: 2.5 }, { hour: 2, minute: 0 }, { hour: 2, minute: 0 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 1, minute: 0 }, { hour: 3, minute: 0 }, { hour: 2.5, minute: 2.5 },
+    { hour: 2.5, minute: 2.5 }, { hour: 1, minute: 0 }, { hour: 3, minute: 0 }, { hour: 2.5, minute: 2.5 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitEight = [
+  const digitEight = [
+      { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 2, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 2, minute: 3 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 0 }, { hour: 1, minute: 0 }, { hour: 3, minute: 0 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 0 }, { hour: 2, minute: 1 }, { hour: 2, minute: 3 }, { hour: 2, minute: 0 },
         { hour: 2, minute: 0 }, { hour: 0, minute: 1 }, { hour: 0, minute: 3 }, { hour: 2, minute: 0 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }
+    { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]  
     
-      const digitNine = [
+  const digitNine = [
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
         { hour: 1, minute: 2 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 },
         { hour: 0, minute: 2 }, { hour: 2, minute: 1 }, { hour: 3, minute: 2 }, { hour: 0, minute: 2 },
         { hour: 2, minute: 0 }, { hour: 0, minute: 1 }, { hour: 3, minute: 0 }, { hour: 0, minute: 2 },
         { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 2 }, { hour: 2, minute: 0 },
         { hour: 1, minute: 2 }, { hour: 3, minute: 1 }, { hour: 0, minute: 3 }, { hour: 2, minute: 0 },
-        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 }  
+        { hour: 0, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 1 }, { hour: 3, minute: 0 },
+        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
       ]   
     
-      const digitDefault = [
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
-        { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 }, { hour: 2.5, minute: 2.5 },
+  const digitDefault = [
+      { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+    { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
+        { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 }, { hour: 0.5, minute: 0.5 },
     ]     
     if (string == 0) {
         return digitZero
