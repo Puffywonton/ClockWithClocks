@@ -10,6 +10,9 @@ const CanvasTest = () => {
     const [number, setNumber] = useState(digitalNumberGenerator('3'))
 
     const clickHandler = () => {
+
+        //this canvas cicles through numbers with anim between (very messy)
+
         animate('.anime1', '2.5')
         animate('.anime2', '0.5')
         console.log('canvas click')
@@ -32,14 +35,6 @@ const CanvasTest = () => {
         <TinyClock key={index} id={index} hour={data.hour} minute={data.minute} delay='200' onClick={clickHandler} />
     )
 
-    // const size = 24;
-    // const clocks = [];
-    // for (let i = 0; i < size; i++) {
-    //     clocks.push(
-    //         <TinyClock hour='2' minute='1.5' key={i} onClick={clickHandler} />
-    //         // <div className="tata" onClick={clickHandler} key={i}>=)</div>
-    //     );
-    // }    
     return (
         <div className={classes.mainContainer}>
         <div className={classes.container}>{fullDigit}</div>
