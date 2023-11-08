@@ -2,36 +2,43 @@
 import TinyClock from "./TinyClock";
 import classes from "./CanvasTest.module.css"
 import animate from "./animate";
-
-
+import digitalNumberGenerator from "./digitalNumberGenerator";
+import { useState } from "react";
 
 const CanvasTest = () => {
-
-    
-    const randomInteger = () => {
-        const min = 0;  // Minimum value
-        const max = 180;  // Maximum value     
-        let x = Math.floor(Math.random() * (max - min + 1)) + min
-        console.log('x', x)
-        return x
-    } 
+    const [counter, setCounter] = useState(0)
+    const [number, setNumber] = useState(digitalNumberGenerator(0))
 
     const clickHandler = () => {
-        animate('.tata', randomInteger())
-        animate('.toto', randomInteger())
+        animate('.tata', '180')
+        animate('.toto', '-180')
+        // setTimeout(() => {
+            // console.log("Delayed for 10 second.");
+          
+        if(counter == 9){
+            setCounter(0)
+        }else{
+            setCounter(prevCounter => prevCounter + 1)
+        }
+
+        setNumber(digitalNumberGenerator(counter))
+    // }, "5000");
     }
 
-    const size = 81;
-    const clocks = [];
-    for (let i = 0; i < size; i++) {
-        // let delay = ((i-(size/2)) ** 2)/2
-        clocks.push(
-            <TinyClock hour='2' minute='1.5' key={i} onClick={clickHandler} />
-            // <div className="tata" onClick={clickHandler} key={i}>=)</div>
-        );
-    }    
+    const fullDigit = number.map((data, index) => 
+        <TinyClock key={index} id={index} hour={data.hour} minute={data.minute} delay='200' onClick={clickHandler} />
+    )
+
+    // const size = 24;
+    // const clocks = [];
+    // for (let i = 0; i < size; i++) {
+    //     clocks.push(
+    //         <TinyClock hour='2' minute='1.5' key={i} onClick={clickHandler} />
+    //         // <div className="tata" onClick={clickHandler} key={i}>=)</div>
+    //     );
+    // }    
     return (
-        <div className={classes.container}>{clocks}</div>
+        <div className={classes.container}>{fullDigit}</div>
     )
 }
 

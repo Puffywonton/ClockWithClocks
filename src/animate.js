@@ -5,11 +5,11 @@ const animate = (target, value) => {
         anime({
             targets: `${target}`,
             rotateZ: [
-                {value: `${value}`, easing: 'linear', duration: 500},
-                // {value: 0, easing: 'easeOutSine', duration: 500}
+                {value: `${value}`, easing: 'linear', duration: 300},
+                {value: `0`, easing: 'linear', duration: 300}
             ],
-            delay: anime.stagger(200, {
-                grid: [9, 9], from: 'center'
+            delay: anime.stagger(300, {
+                grid: [4, 6], from: 'center'
             })
         })
 )
