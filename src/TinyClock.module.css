@@ -2,6 +2,8 @@
   position: relative;
   width: 60px;
   height: 60px;
-  margin: 2px;
-  background-color: #603A5C;
+  margin: 1px;
+  background-color: #212121;
+  border-radius: 100%;
+  box-shadow: 2px 2px 7px 2px rgba(0,0,0,0.16);
 }

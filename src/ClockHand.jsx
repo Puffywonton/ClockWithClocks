@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
+import { useEffect } from "react"
 import classes from "./ClockHand.module.css"
-import animate from "./animate"
+import animateToAngle from "./animateToAngle"
 
 const Clockhand = (props) => {
-    // animate(`${props.class}`, '45')
+    useEffect(()=> {
+        animateToAngle(`.${props.class}`, `${props.value}`)   
+    }, [props.value])
     return (
-        <div className={`${props.class} ${classes.hand}`}           
-            style={{
-                // transform: `rotateZ(${(props.value * 90) - 180}deg)`,
-                // transitionDelay: `${props.delay}ms`,
-            }}>
-        </div>
+        <div className={`${props.class} ${classes.hand}`}></div>
     )
 }
 

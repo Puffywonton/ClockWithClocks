@@ -7,22 +7,25 @@ import { useState } from "react";
 
 const CanvasTest = () => {
     const [counter, setCounter] = useState(0)
-    const [number, setNumber] = useState(digitalNumberGenerator(0))
+    const [number, setNumber] = useState(digitalNumberGenerator('3'))
 
     const clickHandler = () => {
-        animate('.tata', '180')
-        animate('.toto', '-180')
-        // setTimeout(() => {
-            // console.log("Delayed for 10 second.");
-          
-        if(counter == 9){
-            setCounter(0)
-        }else{
-            setCounter(prevCounter => prevCounter + 1)
-        }
-
-        setNumber(digitalNumberGenerator(counter))
-    // }, "5000");
+        animate('.anime1', '2.5')
+        animate('.anime2', '0.5')
+        console.log('canvas click')
+        setTimeout(() => {
+            setNumber(digitalNumberGenerator('t'))
+            console.log('phase 1')
+            setTimeout(() => {        
+                console.log('timeout')
+                if(counter == 9){
+                    setCounter(0)
+                }else{
+                    setCounter(prevCounter => prevCounter + 1)
+                }
+                setNumber(digitalNumberGenerator(counter))
+            }, "4000");
+        }, "4000");
     }
 
     const fullDigit = number.map((data, index) => 
@@ -38,7 +41,10 @@ const CanvasTest = () => {
     //     );
     // }    
     return (
+        <div className={classes.mainContainer}>
         <div className={classes.container}>{fullDigit}</div>
+
+        </div>
     )
 }
 
