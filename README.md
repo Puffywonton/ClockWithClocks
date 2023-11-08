@@ -1,8 +1,6 @@
-# React + Vite
+I wanted to recreate this clock I found online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is real clock created by <a href='https://www.humanssince1982.com/a-million-times-san-jose-2021'>humanssince1982</a>. It is called <b>A million Times</b> and is located at the San José Airport</p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I used anime js for the animations
