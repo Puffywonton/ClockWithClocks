@@ -4,10 +4,10 @@ import classes from "./ClockHand.module.css"
 const Clockhand = (props) => {
     return (
         <div 
-            className={classes.hand}           
+            className={`${props.class} ${classes.hand}`}           
             style={{
-                transform: `rotateZ(${(props.value * 90) - 180}deg)`,
-                transitionDelay: `${props.delay}ms`,
+                // transform: `rotateZ(${(props.value * 90) - 180}deg)`,
+                // transitionDelay: `${props.delay}ms`,
             }}>
         </div>
     )

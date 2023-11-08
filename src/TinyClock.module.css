@@ -1,6 +1,7 @@
 .container{
   position: relative;
-  width: 40px;
-  height: 40px;
-  margin: 0px;
+  width: 60px;
+  height: 60px;
+  margin: 2px;
+  background-color: #603A5C;
 }

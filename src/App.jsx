@@ -1,11 +1,12 @@
 import './App.css'
-import ThreeByThreeTest from './ThreeByThreeTest'
+import CanvasTest from './CanvasTest'
+
 
 function App() {
 
   return (
     <>
-      <ThreeByThreeTest />
+      <CanvasTest />
     </>
   )
 }
